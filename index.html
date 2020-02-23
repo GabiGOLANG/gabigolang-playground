@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Gabigolang playground</title>
+
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./dist/main.js" defer></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <button id="run" class="navbar__run_code_button">
+        <img
+          src="../assets/images/soccer.svg"
+          alt="Soccer ball image"
+          class="navbar__image"
+        />
+        Ir pro jogo
+      </button>
+      <a
+        target="__blank"
+        href="https://github.com/GabiGOLANG/gabigolang-typescript"
+        class="navbar__link"
+      >
+        <img
+          src="./assets/images/github.svg"
+          alt="Github icon"
+          class="navbar__image"
+        />
+        Docs
+      </a>
+    </nav>
+    <div class="playground">
+      <textarea
+        id="code"
+        class="playground__code"
+        spellcheck="false"
+        autocapitalize="false"
+      >
+POZE factorial(n) {
+  GOL(n < 2) {
+    GLOBO n
+  }
+  GLOBO n * factorial(n - 1)
+}
+      
+PLAQUINHA "factorial(5): " + factorial(5)</textarea
+      >
+      <p id="output" class="playground__output"></p>
+    </div>
+  </body>
+</html>
